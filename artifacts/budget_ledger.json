@@ -1,0 +1,58 @@
+{
+  "hard_budget_usd": 5.0,
+  "operational_cap_usd": 4.5,
+  "emergency_reserve_usd": 0.5,
+  "spent_usd": 0.0,
+  "reserved_usd": 0.0,
+  "remaining_usd": 5.0,
+  "entries": [
+    {
+      "request_id": "budget_f2a5d9c9334b",
+      "timestamp": "2026-06-01T00:00:00+00:00",
+      "development_stage": "trace",
+      "purpose": "generate and import synthetic digital trace",
+      "model": "local/deterministic",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "cumulative_spending_usd": 0.0,
+      "remaining_budget_usd": 5.0,
+      "justification": "Deterministic local operation; no paid API.",
+      "status": "settled",
+      "final_verification": false
+    },
+    {
+      "request_id": "budget_116942014c02",
+      "timestamp": "2026-06-01T00:00:01+00:00",
+      "development_stage": "mining",
+      "purpose": "cluster recurring event sequences",
+      "model": "local/deterministic",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "cumulative_spending_usd": 0.0,
+      "remaining_budget_usd": 5.0,
+      "justification": "Deterministic local operation; no paid API.",
+      "status": "settled",
+      "final_verification": false
+    },
+    {
+      "request_id": "budget_bd8779f59aa7",
+      "timestamp": "2026-06-01T00:00:02+00:00",
+      "development_stage": "e2e",
+      "purpose": "final deterministic verification",
+      "model": "local/deterministic",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "estimated_cost_usd": 0.0,
+      "actual_cost_usd": 0.0,
+      "cumulative_spending_usd": 0.0,
+      "remaining_budget_usd": 5.0,
+      "justification": "Deterministic local operation; no paid API.",
+      "status": "settled",
+      "final_verification": false
+    }
+  ]
+}

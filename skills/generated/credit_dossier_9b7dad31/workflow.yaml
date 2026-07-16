@@ -1,0 +1,2 @@
+steps: ["collect", "validate", "calculate", "check_covenants", "check_stop_factors", "draft", "request_approval"]
+external_writes: false

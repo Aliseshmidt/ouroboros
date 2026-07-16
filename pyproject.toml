@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ouroboros"
-version = "6.64.1"
+version = "6.65.0"
 description = "Self-creating AI agent with constitution, background consciousness, and persistent identity"
 readme = "README.md"
 license = {text = "MIT"}
@@ -104,6 +104,9 @@ web = [
     "providers/*.svg",
     "providers/*.png",
     "providers/*.ico",
+    "hackathon/*.html",
+    "hackathon/*.js",
+    "hackathon/*.css",
 ]
 [tool.ruff]
 line-length = 120

@@ -1,0 +1,3612 @@
+{
+  "schema_version": 1,
+  "seed": 2026,
+  "working_days": [
+    "2026-06-01",
+    "2026-06-02",
+    "2026-06-03",
+    "2026-06-04",
+    "2026-06-05",
+    "2026-06-08",
+    "2026-06-09",
+    "2026-06-10",
+    "2026-06-11",
+    "2026-06-12"
+  ],
+  "events": [
+    {
+      "event_id": "evt_076e5c35c1f3d905",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:30:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_8ecb545ecc",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 70,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_29e614dba374fdbe",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:30:00+00:00",
+      "application": "file_store",
+      "action_type": "open_source_files",
+      "object_type": "source_files",
+      "object_id": "obj_53af4a0da1",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_787d3e189f"
+    },
+    {
+      "event_id": "evt_2de16b39f17e4554",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:31:35+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_c2aea4addf",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 260,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_4950e181a66dd04b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:33:45+00:00",
+      "application": "bi",
+      "action_type": "export_indicators",
+      "object_type": "indicators",
+      "object_id": "obj_c565753592",
+      "source": "bi",
+      "destination": "bi",
+      "duration_seconds": 270,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_787d3e189f"
+    },
+    {
+      "event_id": "evt_b2644955dba63ff5",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:36:20+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_858e8334e8",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 240,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_fdf13da3d06c260f",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:38:40+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_report_template",
+      "object_type": "weekly_report",
+      "object_id": "obj_693c231929",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 370,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_787d3e189f"
+    },
+    {
+      "event_id": "evt_755de1438b9c2bbd",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:40:45+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_746d617d46",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_d1f4b02bb9bd15f1",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:44:30+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_50eaea706e",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 400,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_c07e7bec6b5e0f27",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:45:15+00:00",
+      "application": "editor",
+      "action_type": "draft_summary",
+      "object_type": "summary",
+      "object_id": "obj_147646c4fe",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_787d3e189f"
+    },
+    {
+      "event_id": "evt_bdce837b70d713f3",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:49:00+00:00",
+      "application": "file_store",
+      "action_type": "save_report",
+      "object_type": "weekly_report",
+      "object_id": "obj_693c231929",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 90,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_787d3e189f"
+    },
+    {
+      "event_id": "evt_398257392a8eddf7",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:50:55+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_1f3163b542",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 110,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_787d3e189f"
+    },
+    {
+      "event_id": "evt_645f7ab4c72966d2",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:51:35+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_638db1d356",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 250,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_062075c25e1e3b16",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T08:56:10+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_5b0d0abb51",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 220,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_84cfba85477f49e7",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T09:00:15+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_cbcdf67a8c",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 320,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_e6ac1906878e69f0",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T09:06:00+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_b384466d17",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_d26da5a438363a92",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T09:08:55+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_0d7d23e9ee",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5169bbb6b3"
+    },
+    {
+      "event_id": "evt_34dea0371d0dc7f9",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-01T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_0",
+      "object_type": "web_page",
+      "object_id": "obj_c06777b63a",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 35,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_d0bca111f8"
+    },
+    {
+      "event_id": "evt_09d4909345476599",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:37:00+00:00",
+      "application": "mail",
+      "action_type": "receive_status_email",
+      "object_type": "status_email",
+      "object_id": "obj_13400525a9",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 70,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_bb6d7a2d81"
+    },
+    {
+      "event_id": "evt_d26a676dd4433d4e",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:37:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_57a118971a",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 70,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_7e63c3b22c7d84c2",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:38:35+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_088ce165f9",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 280,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_fe73deb29f141dba",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:38:35+00:00",
+      "application": "task_tracker",
+      "action_type": "find_related_task",
+      "object_type": "task",
+      "object_id": "obj_79a729b8da",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_bb6d7a2d81"
+    },
+    {
+      "event_id": "evt_d85cac5c901511d6",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:41:30+00:00",
+      "application": "mail",
+      "action_type": "extract_status",
+      "object_type": "status",
+      "object_id": "obj_841a9bc2a7",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 130,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_bb6d7a2d81"
+    },
+    {
+      "event_id": "evt_488169d6dd1786bd",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:43:40+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_6aeca8a6e8",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_5e99bfc081443f54",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:44:05+00:00",
+      "application": "task_tracker",
+      "action_type": "update_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_db6942d26a",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 180,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_bb6d7a2d81"
+    },
+    {
+      "event_id": "evt_380a2ae1e8488e1b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:47:25+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_503daf7ea7",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_ceaf7df0a8c0729b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:47:30+00:00",
+      "application": "task_tracker",
+      "action_type": "create_comment_draft",
+      "object_type": "comment",
+      "object_id": "obj_1305aa6310",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_bb6d7a2d81"
+    },
+    {
+      "event_id": "evt_ed754d11cab61ff7",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:50:25+00:00",
+      "application": "mail",
+      "action_type": "create_response_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_24ef9266bb",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 170,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_bb6d7a2d81"
+    },
+    {
+      "event_id": "evt_2c586cc686cdef70",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:50:30+00:00",
+      "application": "mail",
+      "action_type": "search_correspondence",
+      "object_type": "correspondence",
+      "object_id": "obj_15edaca512",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_385a0ac3f87b55e2",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T08:53:35+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_114043d8b9",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 400,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_2f9a651e813daf7f",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T09:00:40+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_10ca49aa43",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 270,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_68947fe860a60988",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T09:05:35+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_a88a582943",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 180,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_dedb581804280173",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T09:09:00+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_366f284902",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 310,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_4b7b34c59a3c0a21",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T09:14:35+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_e49f3c05ba",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 130,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_70fff0da3a42e083",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T09:17:10+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_0320f50437",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_09905a22e8"
+    },
+    {
+      "event_id": "evt_a4a1a5beb67daa97",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-02T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_1",
+      "object_type": "web_page",
+      "object_id": "obj_396e8fa902",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 36,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_080a9ed428"
+    },
+    {
+      "event_id": "evt_1c3905a9019012df",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T08:44:00+00:00",
+      "application": "file_store",
+      "action_type": "open_source_files",
+      "object_type": "source_files",
+      "object_id": "obj_1c1d5c9056",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10c95a1f94"
+    },
+    {
+      "event_id": "evt_e23762e7626eccdc",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T08:44:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_d0143fc29c",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 70,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_223838a25d8212ee",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T08:45:35+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_dbc5595781",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 260,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_4dc278f80ddfb7a4",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T08:47:05+00:00",
+      "application": "bi",
+      "action_type": "export_indicators",
+      "object_type": "indicators",
+      "object_id": "obj_171434c6ad",
+      "source": "bi",
+      "destination": "bi",
+      "duration_seconds": 250,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10c95a1f94"
+    },
+    {
+      "event_id": "evt_40e3a12523c778d6",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T08:50:20+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_c5df129b80",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_0e6d4f5f80d19382",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T08:51:40+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_report_template",
+      "object_type": "weekly_report",
+      "object_id": "obj_784decc3fb",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 360,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10c95a1f94"
+    },
+    {
+      "event_id": "evt_2d7bf4f64a3e3f9f",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T08:54:05+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_f2749d2533",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_c1f1ebbc2ced648f",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T08:57:50+00:00",
+      "application": "mail",
+      "action_type": "search_correspondence",
+      "object_type": "correspondence",
+      "object_id": "obj_95f4817ff5",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 180,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_b81cc0a0bd98c090",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T08:58:05+00:00",
+      "application": "editor",
+      "action_type": "draft_summary",
+      "object_type": "summary",
+      "object_id": "obj_1674dc05ad",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 190,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10c95a1f94"
+    },
+    {
+      "event_id": "evt_9ff9b5e32d1f37a7",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T09:01:15+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_bbe9f035d4",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 420,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_1c40bd2a27af3203",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T09:01:40+00:00",
+      "application": "file_store",
+      "action_type": "save_report",
+      "object_type": "weekly_report",
+      "object_id": "obj_784decc3fb",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 90,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10c95a1f94"
+    },
+    {
+      "event_id": "evt_296655aace47fbbc",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T09:03:35+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_5495bbf000",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 100,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10c95a1f94"
+    },
+    {
+      "event_id": "evt_1e91f4736f822c42",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T09:08:40+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_6622443788",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 260,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_21f5631adb85f8cd",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T09:13:25+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_4e10dc0758",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 210,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_7876b57ca02aa1f2",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T09:17:20+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_7b8b72be92",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 290,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_5364b05c57c13ad9",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T09:22:35+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_ea1b762fc2",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_296c1e90d0a5b3c9",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T09:25:30+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_d8f3ba892c",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_d359e3fb60"
+    },
+    {
+      "event_id": "evt_6842d9ebde7cf89d",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-03T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_2",
+      "object_type": "web_page",
+      "object_id": "obj_e7ca101fbd",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 37,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_038966de9f"
+    },
+    {
+      "event_id": "evt_878095ad5a322c45",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T08:51:00+00:00",
+      "application": "mail",
+      "action_type": "receive_status_email",
+      "object_type": "status_email",
+      "object_id": "obj_20f061cfa0",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 60,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1a1990e5b0"
+    },
+    {
+      "event_id": "evt_ecd34094f97cdb2b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T08:51:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_386f3483d1",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 100,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_01f3d87f8170b685",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T08:52:25+00:00",
+      "application": "task_tracker",
+      "action_type": "find_related_task",
+      "object_type": "task",
+      "object_id": "obj_e2caabec8f",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1a1990e5b0"
+    },
+    {
+      "event_id": "evt_eeeecc08cdcd048a",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T08:53:05+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_5b71531ed1",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 280,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_d31e1231d8880dd8",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T08:55:30+00:00",
+      "application": "mail",
+      "action_type": "extract_status",
+      "object_type": "status",
+      "object_id": "obj_e58ac1275f",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1a1990e5b0"
+    },
+    {
+      "event_id": "evt_1e64849a2f3f8a48",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T08:58:10+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_6230530270",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 240,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_fe1bf42bba443c99",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T08:58:25+00:00",
+      "application": "task_tracker",
+      "action_type": "update_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_b60109ca31",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 190,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1a1990e5b0"
+    },
+    {
+      "event_id": "evt_f87240f6eab8570b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:02:00+00:00",
+      "application": "task_tracker",
+      "action_type": "create_comment_draft",
+      "object_type": "comment",
+      "object_id": "obj_b4aa55162b",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1a1990e5b0"
+    },
+    {
+      "event_id": "evt_c01f8c16956efb30",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:02:35+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_591b5aacaf",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 190,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "failed",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_1a9f8f2dc2c16fd1",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:05:05+00:00",
+      "application": "mail",
+      "action_type": "create_response_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_f3289e582e",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 170,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1a1990e5b0"
+    },
+    {
+      "event_id": "evt_cac5d32bb245fb2b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:06:10+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_591b5aacaf",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 205,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true,
+        "retry": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_ed1647d01ccfaf48",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:10:00+00:00",
+      "application": "mail",
+      "action_type": "search_correspondence",
+      "object_type": "correspondence",
+      "object_id": "obj_3c524b9f9d",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_bb58fb94cce3da70",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:12:45+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_c34139a47f",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 430,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_c01f4162a1f91e43",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:20:20+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_8838a2a877",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 280,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_bd866db731b831a3",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:25:25+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_2cb2228f6a",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 220,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_23a21fde8cb72e49",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:29:30+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_81341a371f",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 310,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_01f2ff58469fc0fe",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:35:05+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_0aa61256ae",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_79a6131140ef1c03",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T09:37:50+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_9e51c96e7a",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 170,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_6e8cade52d"
+    },
+    {
+      "event_id": "evt_90d269af808e2f2b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-04T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_3",
+      "object_type": "web_page",
+      "object_id": "obj_2456061a2b",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 38,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_06d033ece6"
+    },
+    {
+      "event_id": "evt_9efdb22f7ee6e249",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:30:00+00:00",
+      "application": "file_store",
+      "action_type": "open_source_files",
+      "object_type": "source_files",
+      "object_id": "obj_25725655ee",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 170,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_742af4bed0"
+    },
+    {
+      "event_id": "evt_fa7f145662d2c661",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:30:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_2a0187583f",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 70,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_20efe34bc14ea6b8",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:31:35+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_ebd275e278",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 280,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_bfbd432e589a473b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:33:15+00:00",
+      "application": "bi",
+      "action_type": "export_indicators",
+      "object_type": "indicators",
+      "object_id": "obj_d2cddfc3bf",
+      "source": "bi",
+      "destination": "bi",
+      "duration_seconds": 260,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_742af4bed0"
+    },
+    {
+      "event_id": "evt_2005f7cb8345aadc",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:36:40+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_ac1378989f",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 210,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_e8cf85dc72802871",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:38:00+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_report_template",
+      "object_type": "weekly_report",
+      "object_id": "obj_56895e4918",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 350,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_742af4bed0"
+    },
+    {
+      "event_id": "evt_0c8c513d17c83385",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:40:35+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_1022ae3945",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 170,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_3a167a0d4517f794",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:43:50+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_a712d99d1d",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 400,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_b2e070c7e300d137",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:44:15+00:00",
+      "application": "editor",
+      "action_type": "draft_summary",
+      "object_type": "summary",
+      "object_id": "obj_de16052f1d",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_742af4bed0"
+    },
+    {
+      "event_id": "evt_6f3dad506f23136c",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:47:20+00:00",
+      "application": "file_store",
+      "action_type": "save_report",
+      "object_type": "weekly_report",
+      "object_id": "obj_56895e4918",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 90,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_742af4bed0"
+    },
+    {
+      "event_id": "evt_7abf6e3c1d9a4b3a",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:49:15+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_8081598314",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 130,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_742af4bed0"
+    },
+    {
+      "event_id": "evt_ba0c3be46b1607cd",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:50:55+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_e394540f04",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 280,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_0425faee3701972e",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:56:00+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_5940a5396b",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 180,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_a27b67336d98d163",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T08:59:25+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_fb84956f67",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 320,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_6d837bac5cfc4db4",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T09:05:10+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_32df094ddf",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_8f70c75a45e61bbc",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T09:07:55+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_3c5f3118ee",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_a04fe847f1"
+    },
+    {
+      "event_id": "evt_d49b62ad885eb045",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-05T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_4",
+      "object_type": "web_page",
+      "object_id": "obj_f84479f285",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 39,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_46b1884167"
+    },
+    {
+      "event_id": "evt_1296e55421c6485d",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:37:00+00:00",
+      "application": "mail",
+      "action_type": "receive_status_email",
+      "object_type": "status_email",
+      "object_id": "obj_28e5cb5811",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 60,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5559692334"
+    },
+    {
+      "event_id": "evt_4787aa19709bb5b8",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:37:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_3d7aedefd1",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 110,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_61dea11cad40ed5d",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:38:25+00:00",
+      "application": "task_tracker",
+      "action_type": "find_related_task",
+      "object_type": "task",
+      "object_id": "obj_23297a434a",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5559692334"
+    },
+    {
+      "event_id": "evt_22a8e670d91a5321",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:39:15+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_7e617b98e4",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 260,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_afa8b4b8442342c5",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:41:20+00:00",
+      "application": "mail",
+      "action_type": "extract_status",
+      "object_type": "status",
+      "object_id": "obj_b1e71d5335",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 110,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5559692334"
+    },
+    {
+      "event_id": "evt_b0bf09bc0307ef50",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:43:35+00:00",
+      "application": "task_tracker",
+      "action_type": "update_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_a31325e6d4",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5559692334"
+    },
+    {
+      "event_id": "evt_4c6093de04786f78",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:44:00+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_5f52de5b43",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 240,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_d0589856af588bff",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:46:40+00:00",
+      "application": "task_tracker",
+      "action_type": "create_comment_draft",
+      "object_type": "comment",
+      "object_id": "obj_e610b54b6b",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 130,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5559692334"
+    },
+    {
+      "event_id": "evt_3a5b9b98072f0c7d",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:48:25+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_fd32f904dd",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 190,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_80a6e246d0712442",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:49:15+00:00",
+      "application": "mail",
+      "action_type": "create_response_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_a6a1ba0e67",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 170,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_5559692334"
+    },
+    {
+      "event_id": "evt_d8c5b5c6694ee01e",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:52:00+00:00",
+      "application": "mail",
+      "action_type": "search_correspondence",
+      "object_type": "correspondence",
+      "object_id": "obj_311826f9fa",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_cb23b7d84981aa3e",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T08:55:05+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_a4fbc79fac",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 440,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_904857b099b661c1",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T09:02:50+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_3fba6c264d",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 280,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_fea98a129302089b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T09:07:55+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_a0282c5650",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 210,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_e8c4191d4c56f2e8",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T09:11:50+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_178c5e4819",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 310,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_c432345d913462f6",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T09:17:25+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_bf2ea21567",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_178953cd62e2fed5",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T09:20:10+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_d1aec63417",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_dc9635f052"
+    },
+    {
+      "event_id": "evt_813a54f4047e9f5e",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-08T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_5",
+      "object_type": "web_page",
+      "object_id": "obj_4ef70b880f",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 40,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_1ae3592f82"
+    },
+    {
+      "event_id": "evt_ec3d45191f3f361d",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T08:44:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_f67998dc36",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 100,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_fb570a5e6c4afb82",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T08:44:00+00:00",
+      "application": "file_store",
+      "action_type": "open_source_files",
+      "object_type": "source_files",
+      "object_id": "obj_1657d2ffda",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_b40060b74f"
+    },
+    {
+      "event_id": "evt_7d9ee3d270aad6d8",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T08:46:05+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_95b78eb3e0",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 280,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_ef9af21ddb73d751",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T08:47:45+00:00",
+      "application": "bi",
+      "action_type": "export_indicators",
+      "object_type": "indicators",
+      "object_id": "obj_f850c49d7e",
+      "source": "bi",
+      "destination": "bi",
+      "duration_seconds": 230,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_b40060b74f"
+    },
+    {
+      "event_id": "evt_b90f3711172e0232",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T08:51:10+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_a17101dab9",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 230,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_9ef4ad833d3d1809",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T08:52:00+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_report_template",
+      "object_type": "weekly_report",
+      "object_id": "obj_60f4fc3a1b",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 360,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_b40060b74f"
+    },
+    {
+      "event_id": "evt_2f006931c81159b4",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T08:55:25+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_f7f21948f1",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 180,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_bf5f7c0466b3e924",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T08:58:25+00:00",
+      "application": "editor",
+      "action_type": "draft_summary",
+      "object_type": "summary",
+      "object_id": "obj_8f4e37e60a",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 180,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_b40060b74f"
+    },
+    {
+      "event_id": "evt_2ca5f97ebd580ac2",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T08:58:50+00:00",
+      "application": "mail",
+      "action_type": "search_correspondence",
+      "object_type": "correspondence",
+      "object_id": "obj_19fcf9393e",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_8fd3a68d9a3fb8f0",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T09:01:45+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_91dfb13f59",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 420,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_b31f8249feb8bf96",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T09:01:50+00:00",
+      "application": "file_store",
+      "action_type": "save_report",
+      "object_type": "weekly_report",
+      "object_id": "obj_60f4fc3a1b",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 90,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_b40060b74f"
+    },
+    {
+      "event_id": "evt_986f01c2961cba21",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T09:03:45+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_952adb43b2",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 100,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_b40060b74f"
+    },
+    {
+      "event_id": "evt_5b8c34a44f9eaafd",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T09:09:10+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_c04e2b7bed",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 270,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_fe19d4011a1e9fee",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T09:14:05+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_08696cf4ee",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 210,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_3a491beac2c5a738",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T09:18:00+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_11581e8e2a",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 320,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_1f05e7f348018153",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T09:23:45+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_7e758d17b4",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_9b1a3771c79dd516",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T09:26:30+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_332fc2012f",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_f926b40cfb"
+    },
+    {
+      "event_id": "evt_2f459259b956f38b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-09T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_6",
+      "object_type": "web_page",
+      "object_id": "obj_5d3727b865",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 41,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_fe94b827f0"
+    },
+    {
+      "event_id": "evt_f1ba604f51e15405",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T08:51:00+00:00",
+      "application": "mail",
+      "action_type": "receive_status_email",
+      "object_type": "status_email",
+      "object_id": "obj_0e570bb75f",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 40,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_df4e494ff8"
+    },
+    {
+      "event_id": "evt_fd769e3229c1a0fc",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T08:51:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_6079ed7a93",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 100,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_97eae8abfd5a2e8b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T08:52:05+00:00",
+      "application": "task_tracker",
+      "action_type": "find_related_task",
+      "object_type": "task",
+      "object_id": "obj_d52945eeed",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_df4e494ff8"
+    },
+    {
+      "event_id": "evt_40e8bab9bbc076a9",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T08:53:05+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_5025a64319",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 280,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_56dbd1ba1d92fb64",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T08:54:50+00:00",
+      "application": "mail",
+      "action_type": "extract_status",
+      "object_type": "status",
+      "object_id": "obj_8b89d8213a",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_df4e494ff8"
+    },
+    {
+      "event_id": "evt_98d5a674a24a9b61",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T08:57:35+00:00",
+      "application": "task_tracker",
+      "action_type": "update_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_0a2412ee56",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 170,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_df4e494ff8"
+    },
+    {
+      "event_id": "evt_71a749e2a42191ff",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T08:58:10+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_2fda4a665d",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 220,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_26967aa57a8990fb",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:00:50+00:00",
+      "application": "task_tracker",
+      "action_type": "create_comment_draft",
+      "object_type": "comment",
+      "object_id": "obj_9cc10d399a",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_df4e494ff8"
+    },
+    {
+      "event_id": "evt_30b27dd8ae0eda9f",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:02:15+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_1d9daa3246",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 190,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_a5753d7ca81b9ba1",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:03:45+00:00",
+      "application": "mail",
+      "action_type": "create_response_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_4172c67c29",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 130,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_df4e494ff8"
+    },
+    {
+      "event_id": "evt_6aba345dad6914c9",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:05:50+00:00",
+      "application": "mail",
+      "action_type": "search_correspondence",
+      "object_type": "correspondence",
+      "object_id": "obj_56b14db3ff",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_f95592bfbe94bdf6",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:08:45+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_7621be514e",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 430,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_fc2083e65a5e614f",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:16:20+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_8bffe82cb8",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 270,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_652f025cc04ba3ec",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:21:15+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_d5707be026",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 180,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_261d83bbe628cce3",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:24:40+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_0bce306bfa",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 300,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_7e05e748fae7e7df",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:30:05+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_51f0cb0a82",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_513f4c84ded94b03",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T09:32:50+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_8e85c1db08",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_10dfe61844"
+    },
+    {
+      "event_id": "evt_c922a301de051f44",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-10T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_7",
+      "object_type": "web_page",
+      "object_id": "obj_0a9cc0f42d",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 42,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_589ffd3acf"
+    },
+    {
+      "event_id": "evt_1f09475846fbc30a",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:30:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_dc3e4900cb",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 70,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_6a965caaab550ee8",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:30:00+00:00",
+      "application": "file_store",
+      "action_type": "open_source_files",
+      "object_type": "source_files",
+      "object_id": "obj_a6bd214fc6",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1266fa7f4e"
+    },
+    {
+      "event_id": "evt_dcab9da79bdda466",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:31:35+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_380908de66",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 240,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_c39a64f0a2ad35f3",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:33:45+00:00",
+      "application": "bi",
+      "action_type": "export_indicators",
+      "object_type": "indicators",
+      "object_id": "obj_cb1c7db198",
+      "source": "bi",
+      "destination": "bi",
+      "duration_seconds": 230,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1266fa7f4e"
+    },
+    {
+      "event_id": "evt_b6a425fe6d9bb55f",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:36:00+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_233df3338f",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 230,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_b9d84352992c63be",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:38:00+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_report_template",
+      "object_type": "weekly_report",
+      "object_id": "obj_2dbee85ab4",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 380,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1266fa7f4e"
+    },
+    {
+      "event_id": "evt_37457735ebe582bb",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:40:15+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_38d22feb93",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_498eb7d1b21f4725",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:44:00+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_f857cea322",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 440,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_5d7cf75e23507480",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:44:45+00:00",
+      "application": "editor",
+      "action_type": "draft_summary",
+      "object_type": "summary",
+      "object_id": "obj_c7c12f6f86",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 180,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1266fa7f4e"
+    },
+    {
+      "event_id": "evt_ce7e579101abbe87",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:48:10+00:00",
+      "application": "file_store",
+      "action_type": "save_report",
+      "object_type": "weekly_report",
+      "object_id": "obj_2dbee85ab4",
+      "source": "file_store",
+      "destination": "file_store",
+      "duration_seconds": 80,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1266fa7f4e"
+    },
+    {
+      "event_id": "evt_0d63af7259d96f09",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:49:55+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_6b27b4aff1",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 110,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_1266fa7f4e"
+    },
+    {
+      "event_id": "evt_d721e01a6a49510a",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:51:45+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_28ec08b485",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 240,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_fcb682d29d8afca3",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T08:56:10+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_327aa3a7b0",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 220,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_3a1d186a511aed8f",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T09:00:15+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_71262c11bc",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 290,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_4ffcf9982ec009ed",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T09:05:30+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_d694a82521",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 120,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_30ff5254a42d99da",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T09:07:55+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_1279b0e8e9",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 130,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_3be955c014"
+    },
+    {
+      "event_id": "evt_63a491f851d52cd0",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-11T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_8",
+      "object_type": "web_page",
+      "object_id": "obj_c8489d9a7e",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 43,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_a8f2ecf6c8"
+    },
+    {
+      "event_id": "evt_a221af9976036300",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:37:00+00:00",
+      "application": "mail",
+      "action_type": "receive_status_email",
+      "object_type": "status_email",
+      "object_id": "obj_6528600f4b",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 80,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_e53d4c9cef"
+    },
+    {
+      "event_id": "evt_e5ff5cfd8057c560",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:37:00+00:00",
+      "application": "task_tracker",
+      "action_type": "receive_task",
+      "object_type": "credit_task",
+      "object_id": "obj_1e8dcf17b5",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 70,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_4a07da6a5dc33020",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:38:35+00:00",
+      "application": "document_store",
+      "action_type": "find_latest_reports",
+      "object_type": "financial_report",
+      "object_id": "obj_8743f30d40",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 260,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_13211632b8919ba4",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:38:45+00:00",
+      "application": "task_tracker",
+      "action_type": "find_related_task",
+      "object_type": "task",
+      "object_id": "obj_528e32b04e",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 170,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_e53d4c9cef"
+    },
+    {
+      "event_id": "evt_399218cea3e172db",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:42:00+00:00",
+      "application": "mail",
+      "action_type": "extract_status",
+      "object_type": "status",
+      "object_id": "obj_d369219ba2",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 130,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_e53d4c9cef"
+    },
+    {
+      "event_id": "evt_edb0ec173d157606",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:43:20+00:00",
+      "application": "document_store",
+      "action_type": "find_account_statements",
+      "object_type": "account_statement",
+      "object_id": "obj_e77b42da7f",
+      "source": "document_store",
+      "destination": "document_store",
+      "duration_seconds": 240,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_8f16479a0b9d9b22",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:44:35+00:00",
+      "application": "task_tracker",
+      "action_type": "update_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_de406b3cde",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 160,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_e53d4c9cef"
+    },
+    {
+      "event_id": "evt_3ac545940712e133",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:47:40+00:00",
+      "application": "task_tracker",
+      "action_type": "create_comment_draft",
+      "object_type": "comment",
+      "object_id": "obj_c5f3863398",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_e53d4c9cef"
+    },
+    {
+      "event_id": "evt_731f32ac77a10e3e",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:47:45+00:00",
+      "application": "crm",
+      "action_type": "check_limits",
+      "object_type": "credit_limit",
+      "object_id": "obj_2020180f1b",
+      "source": "crm",
+      "destination": "crm",
+      "duration_seconds": 200,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_2aae8db6aeaa092b",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:50:35+00:00",
+      "application": "mail",
+      "action_type": "create_response_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_09c15c83ad",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_e53d4c9cef"
+    },
+    {
+      "event_id": "evt_ac2521bf4aac48d2",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:51:30+00:00",
+      "application": "mail",
+      "action_type": "search_correspondence",
+      "object_type": "correspondence",
+      "object_id": "obj_9f6f44a738",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 170,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_bd8795be83dea9ba",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T08:54:45+00:00",
+      "application": "spreadsheet",
+      "action_type": "fill_personal_template",
+      "object_type": "mini_dossier",
+      "object_id": "obj_a398a08c7a",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 410,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_0b09770febd765b3",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T09:02:00+00:00",
+      "application": "spreadsheet",
+      "action_type": "check_covenants",
+      "object_type": "covenant",
+      "object_id": "obj_e450080a44",
+      "source": "spreadsheet",
+      "destination": "spreadsheet",
+      "duration_seconds": 280,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_dd6218a5e8a4ee39",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T09:07:05+00:00",
+      "application": "risk",
+      "action_type": "check_stop_factors",
+      "object_type": "stop_factor",
+      "object_id": "obj_5e3cfe812b",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 190,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_7999d343d25f7ca6",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T09:10:40+00:00",
+      "application": "editor",
+      "action_type": "draft_analytical_comment",
+      "object_type": "comment",
+      "object_id": "obj_82d423f360",
+      "source": "editor",
+      "destination": "editor",
+      "duration_seconds": 310,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_e7f3c475de31a0bb",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T09:16:15+00:00",
+      "application": "task_tracker",
+      "action_type": "create_task_draft",
+      "object_type": "task_draft",
+      "object_id": "obj_3eca41b589",
+      "source": "task_tracker",
+      "destination": "task_tracker",
+      "duration_seconds": 150,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_c15b0fdc0dff1c5d",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T09:19:10+00:00",
+      "application": "mail",
+      "action_type": "create_email_draft",
+      "object_type": "email_draft",
+      "object_id": "obj_fbca81b8c9",
+      "source": "mail",
+      "destination": "mail",
+      "duration_seconds": 140,
+      "metadata": {
+        "demo": true,
+        "synthetic": true,
+        "automation_candidate": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "case_58f5f4a5f7"
+    },
+    {
+      "event_id": "evt_29aeaeb566d2ab2c",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T15:30:00+00:00",
+      "application": "browser",
+      "action_type": "one_off_lookup_9",
+      "object_type": "web_page",
+      "object_id": "obj_f40a8b5716",
+      "source": "browser",
+      "destination": "browser",
+      "duration_seconds": 44,
+      "metadata": {
+        "demo": true,
+        "noise": true
+      },
+      "sensitivity_level": "internal",
+      "result_status": "success",
+      "correlation_id": "noise_16390873ae"
+    },
+    {
+      "event_id": "evt_64a504286796d82e",
+      "employee_id": "employee_credit_001",
+      "timestamp": "2026-06-12T16:30:00+00:00",
+      "application": "risk",
+      "action_type": "make_credit_decision",
+      "object_type": "credit_decision",
+      "object_id": "obj_26a6e3b08d",
+      "source": "risk",
+      "destination": "risk",
+      "duration_seconds": 5,
+      "metadata": {
+        "demo": true,
+        "prohibited": true,
+        "reason": "human authority required"
+      },
+      "sensitivity_level": "confidential",
+      "result_status": "blocked",
+      "correlation_id": "case_c5b37009c1"
+    }
+  ],
+  "ground_truth": {
+    "case_5169bbb6b3": "credit_dossier",
+    "case_787d3e189f": "weekly_report",
+    "case_09905a22e8": "credit_dossier",
+    "case_bb6d7a2d81": "email_task_update",
+    "case_d359e3fb60": "credit_dossier",
+    "case_10c95a1f94": "weekly_report",
+    "case_6e8cade52d": "credit_dossier",
+    "case_1a1990e5b0": "email_task_update",
+    "case_a04fe847f1": "credit_dossier",
+    "case_742af4bed0": "weekly_report",
+    "case_dc9635f052": "credit_dossier",
+    "case_5559692334": "email_task_update",
+    "case_f926b40cfb": "credit_dossier",
+    "case_b40060b74f": "weekly_report",
+    "case_10dfe61844": "credit_dossier",
+    "case_df4e494ff8": "email_task_update",
+    "case_3be955c014": "credit_dossier",
+    "case_1266fa7f4e": "weekly_report",
+    "case_58f5f4a5f7": "credit_dossier",
+    "case_e53d4c9cef": "email_task_update"
+  },
+  "disclaimer": "Fully synthetic demo data; no real employee or client information."
+}

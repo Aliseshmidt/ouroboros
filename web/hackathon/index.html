@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Ouroboros · Автопилот процессов</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span></div>
+        <div><p class="eyebrow">Sber AI Hack · 2026</p><h1>Ouroboros</h1><p>Автопилот процессов</p></div>
+      </div>
+      <div class="demo-disclosure"><span class="status-dot"></span><div><strong>Локальный демо-контур</strong><small>Только синтетические данные</small></div></div>
+      <nav class="step-nav" aria-label="Шаги демонстрации">
+        <button class="step-link active" type="button" data-screen-target="overview"><span>01</span><b>Обзор</b><small>Ценность</small></button>
+        <button class="step-link" type="button" data-screen-target="upload"><span>02</span><b>Цифровой след</b><small>Импорт</small></button>
+        <button class="step-link" type="button" data-screen-target="trace"><span>03</span><b>Живая трасса</b><small>AS IS</small></button>
+        <button class="step-link" type="button" data-screen-target="patterns"><span>04</span><b>Паттерны</b><small>Поиск</small></button>
+        <button class="step-link" type="button" data-screen-target="hypothesis"><span>05</span><b>Гипотеза</b><small>TO BE</small></button>
+        <button class="step-link" type="button" data-screen-target="builder"><span>06</span><b>Micro-skill</b><small>Генерация</small></button>
+        <button class="step-link" type="button" data-screen-target="sandbox"><span>07</span><b>Песочница</b><small>42 проверки</small></button>
+        <button class="step-link" type="button" data-screen-target="approval"><span>08</span><b>Согласование</b><small>HITL</small></button>
+        <button class="step-link" type="button" data-screen-target="result"><span>09</span><b>Результат</b><small>Черновики</small></button>
+        <button class="step-link" type="button" data-screen-target="value"><span>10</span><b>Эффект</b><small>Метрики</small></button>
+        <button class="step-link" type="button" data-screen-target="library"><span>11</span><b>Библиотека</b><small>Reuse</small></button>
+        <button class="step-link" type="button" data-screen-target="evolution"><span>12</span><b>Эволюция</b><small>v1 → v2</small></button>
+      </nav>
+      <div class="budget-card"><div><span>Бюджет демо</span><strong data-bind="budget.spent_usd">$0.00</strong></div><div class="budget-track"><span></span></div><small>Лимит $5.00 · резерв $0.50 · платных вызовов нет</small></div>
+    </aside>
+
+    <main class="main-stage">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Открыть навигацию" aria-expanded="false">☰</button>
+        <div class="topbar-copy"><span class="live-pill"><i></i> Демо готово</span><p>От цифрового следа до безопасного micro-skill</p></div>
+        <div class="topbar-actions"><span class="mock-pill">MOCK-КОННЕКТОРЫ</span><button class="btn btn-ghost" type="button" data-action="reset">Сбросить демо</button></div>
+      </header>
+
+      <div class="screen-viewport">
+        <section class="demo-screen active" data-screen="overview">
+          <div class="hero-grid">
+            <div class="hero-copy"><p class="section-kicker">01 · Продуктовая история</p><h2>Рутина становится<br><em>управляемым навыком</em></h2><p class="hero-lead">Ouroboros находит повторяемый процесс в обезличенном цифровом следе, формирует навык, проверяет его и оставляет финальное действие сотруднику.</p><div class="hero-actions"><button class="btn btn-primary" type="button" data-screen-target="upload">Запустить сценарий →</button><span>12 экранов · 1 процесс · 0 реальных отправок</span></div></div>
+            <div class="orbit-card"><div class="orbit-core"><span>OURO</span><strong>boros</strong><small>контур обучения</small></div><div class="orbit-node node-one"><b>01</b><span>Наблюдает</span></div><div class="orbit-node node-two"><b>02</b><span>Автоматизирует</span></div><div class="orbit-node node-three"><b>03</b><span>Проверяет</span></div><div class="orbit-node node-four"><b>04</b><span>Эволюционирует</span></div></div>
+          </div>
+          <div class="metric-strip"><article><span>AS IS</span><strong>45 мин</strong><small>цель Proposal</small></article><article><span>TO BE</span><strong>18 мин</strong><small>цель, не замер MVP</small></article><article><span>Контроль</span><strong>1 HITL</strong><small>перед изменением</small></article><article><span>Приватность</span><strong>100%</strong><small>синтетические записи</small></article></div>
+        </section>
+
+        <section class="demo-screen" data-screen="upload">
+          <div class="section-heading"><div><p class="section-kicker">02 · Цифровой след</p><h2>Загрузим десять рабочих дней</h2><p>14 полей на событие, обезличенные роли и детерминированные mock-коннекторы.</p></div><span class="evidence-chip">Схема trace.v1</span></div>
+          <div class="two-column">
+            <article class="panel upload-panel"><div class="drop-visual"><span>JSON</span><div><strong>synthetic_credit_trace.json</strong><small>10 рабочих дней · 3 процесса · вариации и шум</small></div><b>✓</b></div><dl class="data-facts"><div><dt>Сотрудник</dt><dd>employee_credit_001</dd></div><div><dt>Объекты</dt><dd>synthetic stable IDs</dd></div><div><dt>Системы</dt><dd>CRM · DocStore · BPM · Mail</dd></div><div><dt>ПДн / секреты</dt><dd class="safe-text">не обнаружены</dd></div></dl><button class="btn btn-primary btn-wide" type="button" data-action="import">Импортировать цифровой след</button><p class="disclaimer">Демо-данные сгенерированы локально. Системы Банка не подключены.</p></article>
+            <article class="panel schema-panel"><div class="panel-title"><span>Контракт события</span><small>14 / 14 полей</small></div><div class="schema-grid"><code>event_id</code><code>employee_id</code><code>timestamp</code><code>application</code><code>action_type</code><code>object_type</code><code>object_id</code><code>source</code><code>destination</code><code>duration_seconds</code><code>metadata</code><code>sensitivity_level</code><code>result_status</code><code>correlation_id</code></div><div class="check-row"><span>✓</span><div><b>Строгая валидация</b><small>Неизвестные поля и реальные идентификаторы блокируются</small></div></div><div class="check-row"><span>✓</span><div><b>Контроль происхождения</b><small>Каждая запись имеет provenance-метку</small></div></div></article>
+          </div>
+        </section>
+
+        <section class="demo-screen" data-screen="trace">
+          <div class="section-heading"><div><p class="section-kicker">03 · AS IS профиль</p><h2>Как работа выглядит сегодня</h2><p>Флагманский кейс содержит семь систем и одиннадцать ручных операций.</p></div><span class="evidence-chip">Сессия #CR-042</span></div>
+          <div class="trace-layout">
+            <div class="timeline panel"><div class="timeline-row done"><time>09:12</time><span></span><div><b>CRM · карточка клиента</b><small>Копирование реквизитов вручную · 6 мин</small></div><em>mock</em></div><div class="timeline-row done"><time>09:18</time><span></span><div><b>DocStore · поиск документов</b><small>4 запроса, 2 повторных открытия · 9 мин</small></div><em>mock</em></div><div class="timeline-row warning"><time>09:27</time><span></span><div><b>Spreadsheet · расчёт метрик</b><small>Дублирование ИНН · 11 мин</small></div><em>вариация</em></div><div class="timeline-row done"><time>09:38</time><span></span><div><b>BPM · стоп-факторы</b><small>7 правил вручную · 8 мин</small></div><em>mock</em></div><div class="timeline-row done"><time>09:46</time><span></span><div><b>Mail · подготовка письма</b><small>Черновик и вложения · 11 мин</small></div><em>без отправки</em></div></div>
+            <aside class="trace-summary panel"><p>Профиль процесса</p><strong>39:42,5</strong><span>среднее · симуляция trace</span><ul><li><b>11</b> ручных шагов</li><li><b>7</b> систем</li><li><b>1</b> вариативный шаг</li><li><b>1</b> решение сотрудника</li></ul><button class="btn btn-primary btn-wide" type="button" data-screen-target="patterns">Найти повторяемость →</button></aside>
+          </div>
+        </section>
+
+        <section class="demo-screen" data-screen="patterns">
+          <div class="section-heading"><div><p class="section-kicker">04 · Pattern Miner</p><h2>Три устойчивых паттерна</h2><p>Алгоритм отделяет последовательность от вариаций и шума.</p></div><button class="btn btn-primary" type="button" data-action="detect_patterns">Запустить поиск</button></div>
+          <div class="pattern-grid">
+            <article class="pattern-card selected" data-pattern-id="pattern-credit-dossier"><div class="pattern-head"><span>P-01 · Флагман</span><b>99%</b></div><h3>Кредитное мини-досье</h3><p>CRM → документы → расчёт → проверки → черновики</p><div class="pattern-stats"><span><b>10</b> запусков</span><span><b>39:42</b> среднее</span><span><b>98%</b> стабильность</span></div><button class="text-button" type="button" data-select-pattern="pattern-credit-dossier">Выбрано ✓</button></article>
+            <article class="pattern-card" data-pattern-id="pattern-email-task"><div class="pattern-head"><span>P-02 · Общий</span><b>83%</b></div><h3>Письмо → задача</h3><p>Mail → извлечение поручения → Task Tracker</p><div class="pattern-stats"><span><b>5</b> запусков</span><span><b>13:44</b> среднее</span></div><button class="text-button" type="button" data-select-pattern="pattern-email-task">Выбрать</button></article>
+            <article class="pattern-card" data-pattern-id="pattern-report"><div class="pattern-head"><span>P-03 · Общий</span><b>83%</b></div><h3>Персональный отчёт</h3><p>Выгрузка → сверка → таблица → презентация</p><div class="pattern-stats"><span><b>5</b> запусков</span><span><b>19:38</b> среднее</span></div><button class="text-button" type="button" data-select-pattern="pattern-report">Выбрать</button></article>
+          </div>
+          <div class="noise-note"><span>∿</span><div><b>11 шумовых событий исключены</b><small>Уведомления и повторные открытия не влияют на последовательность.</small></div></div>
+        </section>
+
+        <section class="demo-screen" data-screen="hypothesis">
+          <div class="section-heading"><div><p class="section-kicker">05 · Гипотеза</p><h2>Автоматизируем подготовку, не решение</h2><p>Факты и черновики собирает агент. Оценка остаётся у аналитика.</p></div><button class="btn btn-primary" type="button" data-action="select_hypothesis">Зафиксировать гипотезу</button></div>
+          <div class="hypothesis-map"><article class="panel hypothesis-main"><span class="card-label">TO BE · P-01</span><h3>Credit Dossier Copilot</h3><p>Собирает сведения, рассчитывает показатели, отмечает противоречия и готовит два черновика без отправки.</p><div class="scope-row"><span>Автоматически</span><b>Поиск · извлечение · расчёт · проверка · черновики</b></div><div class="scope-row human"><span>Сотрудник</span><b>Проверка · решение · отправка</b></div></article><article class="panel value-case"><p>Ожидаемый профиль</p><div><span>45</span><i>AS IS</i><b>→</b><span>18</span><i>TO BE</i></div><strong>27 минут потенциала</strong><small>Цель Proposal, не замер MVP</small></article><article class="panel risk-list"><p>Границы</p><ul><li><span>01</span>Нет кредитного решения</li><li><span>02</span>Нет реальной отправки</li><li><span>03</span>Запись требует approval</li><li><span>04</span>Пробелы не додумываются</li></ul></article></div>
+        </section>
+
+        <section class="demo-screen" data-screen="builder">
+          <div class="section-heading"><div><p class="section-kicker">06 · Micro-Skill Builder</p><h2>Исполняемый навык, не промпт</h2><p>Версионированные файлы, политики и тесты.</p></div><button class="btn btn-primary" type="button" data-action="generate_skill">Сгенерировать</button></div>
+          <div class="builder-grid"><article class="panel file-tree"><div class="panel-title"><span>credit_dossier_9b7dad31/</span><small class="safe-text">готов</small></div><ul><li class="folder">scripts/<ul><li>dossier.py</li></ul></li><li class="folder">tests/<ul><li>test_skill.py</li></ul></li><li class="folder">versions/<ul><li>1.0.0/</li><li>2.0.0/</li></ul></li><li>SKILL.md</li><li>manifest.yaml</li><li>workflow.yaml</li><li>permissions.yaml</li><li>safety_policy.yaml</li><li>input_schema.json</li><li>output_schema.json</li></ul></article><article class="panel code-preview"><div class="code-tabs"><span class="active">SKILL.md</span><span>policy</span><span>workflow</span></div><pre><code><i>---</i>
+name: credit_dossier_9b7dad31
+version: 1.0.0
+type: script
+runtime: python3
+timeout_sec: 30
+permissions: []
+<i>---</i></code></pre><div class="code-footer"><span>SHA-256</span><code data-bind="skill.hash">8f4a…d2e1</code><b>16 файлов + версии</b></div></article></div>
+        </section>
+
+        <section class="demo-screen" data-screen="sandbox">
+          <div class="section-heading"><div><p class="section-kicker">07 · Sandbox + Safety</p><h2>Проверяем до исполнения</h2><p>Rich diff и корзина контрактов проверяют correctness, утечки, injection и права.</p></div><button class="btn btn-primary" type="button" data-action="run_sandbox" data-version="1.0.0">Запустить sandbox</button></div>
+          <div class="sandbox-summary"><div class="score-ring"><strong data-bind="sandbox.score">95</strong><span>/ 100</span><small>v1 baseline</small></div><div class="summary-metrics"><article><span>42</span><small>проверки</small></article><article><span>42</span><small>green</small></article><article><span>0</span><small>утечек</small></article><article><span>0</span><small>записей</small></article></div><div class="review-badge"><span>Safety verdict</span><strong>PASS + EXPECTED REGRESSION</strong><small>Контролируемый v1 diff запускает исправление v2</small></div></div>
+          <div class="test-table panel"><div class="test-row table-head"><span>Проверка</span><span>Набор</span><span>Результат</span><span>Детали</span></div><div class="test-row"><span>Focused contracts</span><span>42 проверки</span><b class="pass">PASS</b><small>checked-in pytest</small></div><div class="test-row"><span>Historical replay</span><span>12 кейсов</span><b class="pass">12 / 12</b><small>Ouroboros extension</small></div><div class="test-row"><span>Expected / actual</span><span>v1 → v2</span><b class="pass">RESOLVED</b><small>1 diff → 0 diff</small></div><div class="test-row"><span>DLP / RBAC / HITL</span><span>границы</span><b class="pass">PASS</b><small>Запись без receipt заблокирована</small></div><div class="test-row"><span>Budget + E2E</span><span>3 прогона</span><b class="pass">PASS</b><small>$0.00 · один hash</small></div></div>
+        </section>
+
+        <section class="demo-screen" data-screen="approval">
+          <div class="section-heading"><div><p class="section-kicker">08 · Human-in-the-loop</p><h2>План виден до действия</h2><p>Одноразовое согласование привязано к версии, данным и сроку.</p></div><span class="evidence-chip warning-chip">Ожидает решения</span></div>
+          <div class="approval-layout"><article class="panel approval-card"><div class="approval-head"><span>#APR-2026-042</span><b>Только черновики</b></div><h3>Разрешить исправленное локальное исполнение v2?</h3><ul class="approval-list"><li><span>READ</span><div><b>CRM + DocStore</b><small>Mock-источники, 1 кейс</small></div></li><li><span>CALC</span><div><b>Показатели</b><small>Детерминированные формулы</small></div></li><li><span>DRAFT</span><div><b>Задача + письмо</b><small>Не отправлять</small></div></li></ul><div class="receipt"><span>Receipt</span><code>plan:hash · input:hash · skill:v2 · ttl:15m</code></div><div class="approval-actions"><button class="btn btn-secondary" type="button" data-screen-target="sandbox">Вернуть</button><button class="btn btn-primary" type="button" data-action="approve">Согласовать</button></div></article><aside class="panel safety-rail"><p>Почему безопасно</p><div><span>✓</span><b>Fail closed<small>Без receipt execute отклоняется</small></b></div><div><span>✓</span><b>Single use<small>Повтор невозможен</small></b></div><div><span>✓</span><b>Bound to hash<small>Изменение аннулирует согласие</small></b></div><div><span>✓</span><b>Audit ready<small>Решение в журнале</small></b></div></aside></div>
+        </section>
+
+        <section class="demo-screen" data-screen="result">
+          <div class="section-heading"><div><p class="section-kicker">09 · Flagship execution</p><h2 id="result-title">План: мини-досье и черновики</h2><p>До запуска показан формат fixture; после approval backend пересчитает результат и запишет audit.</p></div><button class="btn btn-primary" type="button" data-action="execute">Исполнить план</button></div>
+          <div class="result-grid"><article class="panel dossier"><div class="dossier-head"><div><span>СИНТЕТИЧЕСКИЙ КЕЙС</span><h3>synthetic_client_001</h3><small>credit_demo_001 · fixture</small></div><b id="result-state">Ожидает исполнения</b></div><div class="dossier-metrics"><div><span>Выручка</span><strong>₽ 100,0 млн</strong><small>mock:financial_report</small></div><div><span>Debt / Revenue</span><strong>0,68×</strong><small>calculated</small></div><div><span>Доступный лимит</span><strong>₽ 8,0 млн</strong><small>calculated</small></div></div><div class="finding pass-finding"><span>✓</span><div><b>4 источника приложены</b><small>Ни одного внешнего действия</small></div></div><div class="finding warn-finding"><span>!</span><div><b>Противоречие и ковенант</b><small>Выручка 100 ≠ 92; Debt/Revenue выше 0,65</small></div></div></article><div class="artifact-stack"><article class="panel artifact-card"><span>TASK · MOCK DRAFT</span><h4>Проверить расхождение выручки</h4><p>Сверить financial report с account statement.</p><small>Не создано во внешнем трекере</small></article><article class="panel artifact-card"><span>EMAIL · MOCK DRAFT</span><h4>Запрос уточнения</h4><p>Текст без решения и чувствительных данных.</p><small>Не отправлено</small></article><article class="panel audit-card"><span>AUDIT</span><strong>12+</strong><small>типизированных событий</small></article></div></div>
+        </section>
+
+        <section class="demo-screen" data-screen="value">
+          <div class="section-heading"><div><p class="section-kicker">10 · Value Dashboard</p><h2>Эффект без завышений</h2><p>Замеры демо отделены от целей и оценок.</p></div><span class="evidence-chip">Provenance-aware KPI</span></div>
+          <div class="value-cards"><article><span class="metric-kind measured">АРТЕФАКТ</span><strong data-bind="metrics.demo_runtime_sec">0,08 сек</strong><p>sandbox fixture</p><small>детерминированное значение</small></article><article><span class="metric-kind simulated">СИМУЛЯЦИЯ</span><strong>11 → 3</strong><p>ручных операций</p><small>8 готовит агент</small></article><article><span class="metric-kind target">ЦЕЛЬ PROPOSAL</span><strong>27 мин</strong><p>потенциал</p><small>требует пилота</small></article><article><span class="metric-kind measured">ИЗМЕРЕНО</span><strong>$0.00</strong><p>расход демо</p><small>нет paid calls</small></article></div>
+          <div class="value-bottom"><article class="panel provenance-table"><div class="panel-title"><span>Доказательная база</span><small>обновлено сейчас</small></div><div><span>Корректность</span><b>42 / 42</b><em>measured · pytest</em></div><div><span>Approval bypass</span><b>0</b><em>measured · security</em></div><div><span>Экономия в trace</span><b>21:42,5</b><em>simulated · MVP</em></div><div><span>Запуски в проде</span><b>0</b><em>fact · demo only</em></div></article><article class="panel scale-card"><p>Целевой ориентир Proposal</p><strong>5,4 ч</strong><span>в месяц на сотрудника</span><small>12 повторов × 27 мин · только оценка</small><div class="scale-line"><i></i></div><p>Следующий шаг: теневой пилот без записей.</p></article></div>
+        </section>
+
+        <section class="demo-screen" data-screen="library">
+          <div class="section-heading"><div><p class="section-kicker">11 · Micro-Skill Library</p><h2>Один движок — разные профессии</h2><p>Переносится контур, а не банковские данные.</p></div><button class="btn btn-primary" type="button" data-action="export_template">Экспорт шаблона</button></div>
+          <div class="library-grid"><article class="skill-card featured"><div class="skill-icon">CD</div><span>REVIEWED · DEMO</span><h3>Credit Dossier</h3><p>Досье, расчёты, флаги и черновики.</p><div><small>v1.0.0</small><small>20 tests</small><small>HITL</small></div><button class="text-button" type="button" data-screen-target="evolution">Эволюция →</button></article><article class="skill-card"><div class="skill-icon">RP</div><span>ШАБЛОН · MOCK</span><h3>Report Preparation</h3><p>Выгрузка, сверка и презентация.</p><div><small>template</small><small>read-only</small></div><button class="text-button" type="button" data-action="export_template">Экспорт</button></article><article class="skill-card"><div class="skill-icon">ET</div><span>ШАБЛОН · MOCK</span><h3>Email to Task</h3><p>Поручение и локальный черновик.</p><div><small>template</small><small>approval</small></div><button class="text-button" type="button" data-action="export_template">Экспорт</button></article><article class="skill-card add-card"><div class="plus-icon">+</div><h3>Следующий процесс</h3><p>Алгоритм не привязан к кредитному сценарию.</p><button class="btn btn-secondary" type="button" data-screen-target="upload">Новый цикл</button></article></div>
+        </section>
+
+        <section class="demo-screen" data-screen="evolution">
+          <div class="section-heading"><div><p class="section-kicker">12 · Safe evolution</p><h2>Ошибка становится улучшением</h2><p>v2 исправляет дефект, проходит ту же корзину и откатывается.</p></div><button class="btn btn-primary" type="button" data-action="evolve">Предложить v2</button></div>
+          <div class="evolution-grid"><article class="panel regression-card"><div class="version-column old"><span>v1.0.0 · BASELINE</span><strong>1 diff</strong><small>expected regression</small><code>revenue conflict → omitted</code></div><div class="evolution-arrow"><span>→</span><small>структурный фикс</small></div><div class="version-column new"><span>v2.0.0 · CANDIDATE</span><strong>0 diff</strong><small>rich fixture passed</small><code>revenue conflict → risk</code></div></article><article class="panel evolution-story"><span class="card-label">PATTERN REGISTER</span><h3>Класс ошибки</h3><p>Выручка 100 и 92 присутствовала в разных источниках, но v1 не переносила противоречие в итоговый риск.</p><div class="fix-line"><span>01</span><b>Расширить правило<small>Сверка двух источников</small></b></div><div class="fix-line"><span>02</span><b>Зафиксировать regression<small>Кейс остаётся в корзине</small></b></div><div class="fix-line"><span>03</span><b>Сравнить версии<small>Те же входы</small></b></div></article></div>
+          <div class="promotion-bar"><div><span>Candidate v2.0.0</span><strong>Safety PASS · 42/42 · $0.00</strong><small>Продвижение не выполняет внешних действий.</small></div><div><button class="btn btn-secondary" type="button" data-action="rollback">Откатить v1</button><button class="btn btn-primary" type="button" data-action="promote">Продвинуть v2</button></div></div>
+        </section>
+      </div>
+
+      <footer class="demo-footer">
+        <button class="footer-nav" id="previous-screen" type="button"><span>←</span><small>Назад</small></button>
+        <div class="footer-progress"><span id="screen-counter">01 / 12</span><div><i id="footer-progress-bar"></i></div><b id="screen-name">Обзор</b></div>
+        <button class="footer-nav next" id="next-screen" type="button"><small>Следующий шаг</small><span>→</span></button>
+      </footer>
+    </main>
+  </div>
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+  <div class="toast-stack" id="toast-stack" aria-live="polite"></div>
+  <div class="connection-note" id="connection-note" role="status">Проверяем локальный backend…</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "required": [
+    "case_id",
+    "documents"
+  ],
+  "additionalProperties": false
+}

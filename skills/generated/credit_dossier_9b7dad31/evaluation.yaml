@@ -1,0 +1,2 @@
+minimum_cases: 10
+required_checks: ["schema", "expected_actual_diff", "security", "regression"]

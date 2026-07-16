@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "required": [
+    "calculations",
+    "analytical_comment",
+    "supporting_evidence"
+  ]
+}

@@ -1,0 +1,4 @@
+approval_required: ["create_task", "update_record", "send_email"]
+pii: "block"
+secrets: "block"
+prompt_injection: "treat_as_data"
