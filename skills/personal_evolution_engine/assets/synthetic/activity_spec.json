@@ -1,0 +1,381 @@
+{
+  "profile": {
+    "name": "Синтетический сотрудник",
+    "period": "2026-03-02/2026-06-30",
+    "notice": "Все события и файлы вымышлены"
+  },
+  "workflows": [
+    {
+      "case_prefix": "partner_mail_cycle",
+      "occurrences": 15,
+      "start": "2026-06-01T09:10:00+03:00",
+      "interval_days": 1,
+      "outcome": "таблица по письмам партнёров с отмеченными пропусками",
+      "steps": [
+        {
+          "application": "Почта",
+          "action": "прочитать входящие данные",
+          "object_type": "письма партнёров",
+          "activity": "открыть письма партнёров и выписать показатели",
+          "duration_min": 5.2,
+          "automation_share": 0.9,
+          "effect": "read",
+          "automation": {
+            "operation": "load_json",
+            "settings": {
+              "glob": "inbox/partner_messages/*.json",
+              "save_as": "partner_messages"
+            }
+          }
+        },
+        {
+          "application": "Excel",
+          "action": "перенести поля",
+          "object_type": "строки партнёрского отчёта",
+          "activity": "перенести нужные поля в таблицу",
+          "duration_min": 8.5,
+          "automation_share": 0.92,
+          "effect": "sandbox",
+          "automation": {
+            "operation": "select_fields",
+            "settings": {
+              "from": "partner_messages",
+              "save_as": "partner_rows",
+              "fields": ["partner", "report_date", "region", "orders", "revenue", "comment"]
+            }
+          }
+        },
+        {
+          "application": "Excel",
+          "action": "проверить и сохранить копию",
+          "object_type": "итоговая таблица партнёров",
+          "activity": "подсветить пропуски и сохранить файл для проверки",
+          "duration_min": 4.4,
+          "automation_share": 0.78,
+          "effect": "sandbox",
+          "automation": {
+            "operation": "write_excel",
+            "settings": {
+              "from": "partner_rows",
+              "filename": "partner_mail_summary.xlsx",
+              "sheet": "Партнёры",
+              "columns": [
+                {"key": "partner", "header": "Партнёр", "required": true},
+                {"key": "report_date", "header": "Дата отчёта", "required": true},
+                {"key": "region", "header": "Регион", "required": true},
+                {"key": "orders", "header": "Заказы", "required": true},
+                {"key": "revenue", "header": "Выручка", "required": true, "number_format": "#,##0"},
+                {"key": "comment", "header": "Комментарий", "required": false}
+              ],
+              "chart": {
+                "title": "Выручка партнёров",
+                "category_key": "partner",
+                "value_keys": ["revenue"],
+                "category_title": "Партнёр",
+                "value_title": "Выручка",
+                "anchor": "H2"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_prefix": "weekly_reporting_cycle",
+      "occurrences": 14,
+      "start": "2026-03-02T10:00:00+03:00",
+      "interval_days": 7,
+      "outcome": "еженедельный сводный отчёт с диаграммой",
+      "steps": [
+        {
+          "application": "CRM",
+          "action": "выгрузить показатели",
+          "object_type": "региональные продажи CRM",
+          "activity": "собрать показатели продаж из CRM",
+          "duration_min": 7.5,
+          "automation_share": 0.82,
+          "effect": "read",
+          "automation": {
+            "operation": "load_csv",
+            "settings": {"glob": "reporting/crm_sales.csv", "save_as": "crm_sales"}
+          }
+        },
+        {
+          "application": "BI",
+          "action": "выгрузить показатели",
+          "object_type": "региональные обращения BI",
+          "activity": "собрать показатели обращений из BI",
+          "duration_min": 6.4,
+          "automation_share": 0.84,
+          "effect": "read",
+          "automation": {
+            "operation": "load_csv",
+            "settings": {"glob": "reporting/bi_funnel.csv", "save_as": "bi_funnel"}
+          }
+        },
+        {
+          "application": "Excel",
+          "action": "свести данные",
+          "object_type": "региональная сводка",
+          "activity": "сопоставить выгрузки по регионам",
+          "duration_min": 12.8,
+          "automation_share": 0.9,
+          "effect": "sandbox",
+          "automation": {
+            "operation": "join_tables",
+            "settings": {
+              "left": "crm_sales",
+              "right": "bi_funnel",
+              "on": ["region"],
+              "save_as": "weekly_summary"
+            }
+          }
+        },
+        {
+          "application": "Excel",
+          "action": "обновить отчёт",
+          "object_type": "еженедельный отчёт",
+          "activity": "обновить таблицу и построить диаграмму",
+          "duration_min": 8.7,
+          "automation_share": 0.86,
+          "effect": "sandbox",
+          "automation": {
+            "operation": "write_excel",
+            "settings": {
+              "from": "weekly_summary",
+              "filename": "weekly_management_report.xlsx",
+              "sheet": "Неделя",
+              "columns": [
+                {"key": "region", "header": "Регион", "required": true},
+                {"key": "deals", "header": "Сделки", "required": true},
+                {"key": "revenue", "header": "Выручка", "required": true},
+                {"key": "leads", "header": "Обращения", "required": true},
+                {"key": "conversion", "header": "Конверсия, %", "required": true, "number_format": "0.0"}
+              ],
+              "chart": {
+                "title": "Сделки и обращения по регионам",
+                "category_key": "region",
+                "value_keys": ["deals", "leads"],
+                "labels": {"deals": "Сделки", "leads": "Обращения"},
+                "value_title": "Количество",
+                "category_title": "Регион",
+                "anchor": "G2"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_prefix": "day_closing_cycle",
+      "occurrences": 16,
+      "start": "2026-06-01T17:35:00+03:00",
+      "interval_days": 1,
+      "outcome": "комплект черновиков для завершения рабочего дня",
+      "steps": [
+        {
+          "application": "Почта",
+          "action": "найти поручения",
+          "object_type": "письма с поручениями",
+          "activity": "найти в почте поручения за день",
+          "duration_min": 6.1,
+          "automation_share": 0.84,
+          "effect": "read",
+          "automation": {
+            "operation": "load_json",
+            "settings": {"glob": "end_of_day/task_candidates.json", "save_as": "task_candidates"}
+          }
+        },
+        {
+          "application": "Планировщик задач",
+          "action": "подготовить задачи",
+          "object_type": "черновики задач",
+          "activity": "перенести поручения в черновики задач",
+          "duration_min": 8.8,
+          "automation_share": 0.9,
+          "effect": "draft",
+          "automation": {
+            "operation": "project_records",
+            "settings": {
+              "from": "task_candidates",
+              "save_as": "task_drafts",
+              "fields": {
+                "title": "subject",
+                "owner": "owner",
+                "due_date": "due_date",
+                "source": "mail_reference",
+                "status": {"value": "draft"}
+              }
+            }
+          }
+        },
+        {
+          "application": "Планировщик задач",
+          "action": "сохранить черновики",
+          "object_type": "локальный список задач",
+          "activity": "сохранить список задач для проверки",
+          "duration_min": 3.2,
+          "automation_share": 0.82,
+          "effect": "draft",
+          "automation": {
+            "operation": "write_json",
+            "settings": {"from": "task_drafts", "filename": "day_closing/task_drafts.json"}
+          }
+        },
+        {
+          "application": "Файлы",
+          "action": "сохранить важные письма",
+          "object_type": "локальный архив писем",
+          "activity": "скопировать важные письма в архивную папку",
+          "duration_min": 5.5,
+          "automation_share": 0.94,
+          "effect": "sandbox",
+          "automation": {
+            "operation": "copy_files",
+            "settings": {
+              "glob": "end_of_day/important_mail/*.txt",
+              "directory": "day_closing/mail_archive"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_prefix": "presentation_cycle",
+      "occurrences": 12,
+      "start": "2025-07-01T14:00:00+03:00",
+      "interval_days": 30,
+      "outcome": "презентация с обновлёнными показателями и динамикой",
+      "steps": [
+        {
+          "application": "Excel",
+          "action": "прочитать текущие показатели",
+          "object_type": "показатели текущего месяца",
+          "activity": "открыть таблицу с текущими показателями",
+          "duration_min": 4.5,
+          "automation_share": 0.82,
+          "effect": "read",
+          "automation": {
+            "operation": "load_csv",
+            "settings": {"glob": "monthly/current.csv", "save_as": "current_month"}
+          }
+        },
+        {
+          "application": "Excel",
+          "action": "прочитать прошлые показатели",
+          "object_type": "показатели прошлого месяца",
+          "activity": "открыть таблицу прошлого месяца",
+          "duration_min": 3.8,
+          "automation_share": 0.82,
+          "effect": "read",
+          "automation": {
+            "operation": "load_csv",
+            "settings": {"glob": "monthly/previous.csv", "save_as": "previous_month"}
+          }
+        },
+        {
+          "application": "Excel",
+          "action": "сравнить периоды",
+          "object_type": "динамика показателей",
+          "activity": "посчитать изменения относительно прошлого месяца",
+          "duration_min": 7.6,
+          "automation_share": 0.9,
+          "effect": "sandbox",
+          "automation": {
+            "operation": "compare_records",
+            "settings": {
+              "current": "current_month",
+              "previous": "previous_month",
+              "key": "metric",
+              "value": "value",
+              "current_name": "Текущий месяц",
+              "previous_name": "Прошлый месяц",
+              "delta_name": "Изменение",
+              "save_as": "monthly_comparison"
+            }
+          }
+        },
+        {
+          "application": "PowerPoint",
+          "action": "обновить презентацию",
+          "object_type": "ежемесячная презентация",
+          "activity": "перенести цифры, обновить диаграмму и выделить изменения",
+          "duration_min": 18.5,
+          "automation_share": 0.88,
+          "effect": "sandbox",
+          "automation": {
+            "operation": "write_presentation",
+            "settings": {
+              "from": "monthly_comparison",
+              "filename": "monthly_performance_review.pptx",
+              "title": "Итоги месяца",
+              "subtitle": "Синтетические данные — версия для проверки",
+              "table_title": "Показатели и изменения",
+              "columns": [
+                {"key": "metric", "header": "Показатель", "required": true},
+                {"key": "Прошлый месяц", "header": "Прошлый месяц", "required": true},
+                {"key": "Текущий месяц", "header": "Текущий месяц", "required": true},
+                {"key": "Изменение", "header": "Изменение", "required": true}
+              ],
+              "chart": {
+                "title": "Сравнение периодов",
+                "category_key": "metric",
+                "value_keys": ["Прошлый месяц", "Текущий месяц"],
+                "labels": {
+                  "Прошлый месяц": "Прошлый месяц",
+                  "Текущий месяц": "Текущий месяц"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_prefix": "stakeholder_mail_cycle",
+      "occurrences": 13,
+      "start": "2026-03-06T16:00:00+03:00",
+      "interval_days": 7,
+      "outcome": "персональные черновики регулярных писем руководителя",
+      "steps": [
+        {
+          "application": "Отчёты",
+          "action": "собрать пакеты показателей",
+          "object_type": "показатели для стейкхолдеров",
+          "activity": "собрать цифры и контекст для каждого получателя",
+          "duration_min": 9.4,
+          "automation_share": 0.84,
+          "effect": "read",
+          "automation": {
+            "operation": "load_json",
+            "settings": {
+              "glob": "communications/weekly_packets.json",
+              "save_as": "communication_packets"
+            }
+          }
+        },
+        {
+          "application": "Почта",
+          "action": "подготовить персональные письма",
+          "object_type": "черновики внутренних писем",
+          "activity": "сформировать разные письма в привычном стиле и положить в черновики",
+          "duration_min": 16.8,
+          "automation_share": 0.9,
+          "effect": "draft",
+          "automation": {
+            "operation": "draft_emails",
+            "settings": {
+              "from": "communication_packets",
+              "directory": "mail_drafts",
+              "from_address": "manager@example.test",
+              "to_field": "recipient",
+              "name_field": "short_name",
+              "subject_template": "{subject}",
+              "body_template": "{greeting}\n\nКоротко по итогам недели: {summary}.\n\nКлючевая цифра: {key_metric}.\nЧто требует внимания: {attention}.\n\n{closing}\n"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

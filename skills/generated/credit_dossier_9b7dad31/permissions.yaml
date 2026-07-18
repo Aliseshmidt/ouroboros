@@ -1,2 +1,0 @@
-allow: ["read_synthetic_sources", "create_mock_drafts"]
-deny: ["make_credit_decision", "send_email", "delete"]

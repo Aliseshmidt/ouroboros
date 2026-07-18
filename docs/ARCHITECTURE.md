@@ -1,4 +1,4 @@
-# Ouroboros v6.65.0 — Architecture & Reference
+# Ouroboros v6.64.1 — Architecture & Reference
 
 This file is NOT a changelog. Version history lives in README.md, git tags, and commit log.
 
@@ -7,23 +7,6 @@ This document is the current operational map of Ouroboros: structure, data flows
 ---
 
 ## 1. High-Level Architecture
-
-### Personal Micro-Automation Agent demo extension
-
-The Sber AI Hack demo is an additive, localhost-only extension; it does not replace the production task lifecycle or duplicate provider gateways. `ouroboros/hackathon/` supplies a deterministic reference domain (trace ingestion, sequence clustering, hypothesis, generated skill, sandbox, approval, execution, value, evolution, rollback), while `skills/personal_evolution_engine/` exposes the same product concept through the reviewed Ouroboros extension API (tools, routes, and a declarative widget). `web/hackathon/` is a jury-guided presentation surface backed by the real synchronous `DemoOrchestrator` through `ouroboros.hackathon.server` on loopback port 8776.
-
-```
-synthetic JSON/CSV trace
-  -> Trace Ingestion role -> Safety/DLP gate -> Pattern Miner role
-  -> Hypothesis role -> Micro-Skill Builder role -> generated SKILL.md tree
-  -> Sandbox + Quality Reviewer roles -> employee approval receipt
-  -> deterministic draft execution -> Value Tracker role
-  -> Evolution role -> v2 regression -> promote / rollback
-```
-
-Role boundaries are typed method/artifact handoffs inside one local orchestrator. This is intentionally described as internal A2A-style delegation, not as an external A2A network transport. Ouroboros remains indispensable through its extension contract, skill artifact model, governed safety/review principles, version lifecycle, audit evidence, and rollback convention. Corporate systems are explicit mocks; production MCP adapters are only an integration design and are not claimed as live.
-
-All demo paths fail closed: secret-like or direct-PII trace fields are rejected, prompt-injection text remains data, generated executables have no runtime permissions, external writes are absent, execution requires a proposal/version-bound approval, and the hard paid-call budget is an immutable USD 5.00 with a USD 4.50 operational cap and USD 0.50 emergency reserve. Generated state lives under `tmp/hackathon-demo/`; reproducible submission evidence lives under `artifacts/` and `submission/`.
 
 ```
 User

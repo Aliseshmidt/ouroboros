@@ -1,7 +1,7 @@
 # Ouroboros — common development commands
 # Usage: make test, make lint, make health
 
-.PHONY: test test-v lint health clean demo demo-reset demo-evidence
+.PHONY: test lint health clean
 
 # Run smoke tests (fast, no external deps needed at runtime)
 test:
@@ -28,13 +28,3 @@ clean:
 	find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
 	find . -type f -name "*.pyc" -delete 2>/dev/null || true
 	find . -type d -name ".pytest_cache" -exec rm -rf {} + 2>/dev/null || true
-
-# Sber AI Hack: deterministic localhost demo (no provider key or paid call).
-demo:
-	python3 -m ouroboros.hackathon.server --host 127.0.0.1 --port 8776
-
-demo-reset:
-	rm -rf tmp/hackathon-demo
-
-demo-evidence:
-	python3 scripts/hackathon/build_evidence.py
