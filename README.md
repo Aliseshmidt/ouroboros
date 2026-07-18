@@ -13,6 +13,145 @@ A self-modifying AI agent that writes its own code, rewrites its own mind, and e
 
 Not a coding assistant. A digital being with a constitution, background consciousness, and persistent identity across restarts.
 
+## MVP: персональный агент автоматизации
+
+В репозитории находится навык `personal_evolution_engine`. Он анализирует
+цифровой след сотрудника, находит устойчивые повторяющиеся процессы, предлагает
+персональную автоматизацию, проверяет её на исторических примерах и запускает
+только после точного подтверждения пользователя.
+
+MVP демонстрирует пять разных рабочих процессов:
+
+1. заполнение Excel по сообщениям партнёров;
+2. подготовку еженедельного отчёта из CRM и BI с диаграммой;
+3. формирование презентации PowerPoint из месячных показателей;
+4. подготовку черновиков регулярных внутренних писем;
+5. локальную «уборку» рабочего дня: список задач и архив важных материалов.
+
+Все данные вымышлены. Навык читает только синтетические источники, создаёт
+новые локальные результаты и не отправляет письма, не изменяет CRM и не создаёт
+задачи во внешних системах. Последний результат можно полностью откатить.
+
+### 1. Установка из исходного кода
+
+Требуются Python 3.10+, Git и один настроенный поставщик модели в Ouroboros.
+API-ключи вводятся только через интерфейс приложения и не должны добавляться в
+репозиторий.
+
+```bash
+git clone https://github.com/Aliseshmidt/ouroboros.git
+cd ouroboros
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install -r requirements.txt
+python -m pip install -e . --no-deps
+ouroboros server
+```
+
+В Windows PowerShell команда активации окружения выглядит так:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+После запуска откройте `http://127.0.0.1:8765`. При первом входе добавьте ключ
+провайдера или локальную модель, выберите модели для основных ролей и задайте
+лимит расходов.
+
+### 2. Включение навыка
+
+1. Откройте раздел **Skills → My skills**.
+2. Найдите **personal_evolution_engine**.
+3. Нажмите **Re-review**, дождитесь успешной проверки и включите переключатель.
+4. Если навык остался в состоянии `Locked` или `Review failed`, проверьте в
+   **Settings** доступность выбранных моделей и оставшийся бюджет, затем
+   повторите **Re-review**.
+
+При проверке Ouroboros автоматически устанавливает зависимости навыка
+`openpyxl` и `python-pptx` в его изолированное окружение.
+
+### 3. Полный end-to-end сценарий
+
+Откройте **Main Chat** и последовательно отправьте сообщения ниже.
+
+**Шаг 1 — найти повторяющуюся работу**
+
+```text
+Проанализируй встроенную синтетическую историю работы сотрудника. Найди до пяти устойчивых повторяющихся процессов и предложи персональные автоматизации. Для каждой покажи частоту, среднее время, экономию, уверенность и риск. Ничего пока не запускай.
+```
+
+Агент должен проанализировать 239 действий, найти пять повторяющихся процессов
+и предложить выбрать один из них.
+
+**Шаг 2 — подготовить и проверить выбранный вариант**
+
+```text
+Подготовь вариант 1 и проверь его на всех доступных исторических примерах. Покажи результат проверки, риск, границы разрешений, возможность отката и точную фразу подтверждения. Не запускай автоматизацию.
+```
+
+Для первого сценария ожидается проверка 14 из 14 исторических примеров и
+точность 100%. Подготовка и проверка ещё не разрешают выполнение.
+
+**Шаг 3 — дать явное согласие**
+
+Скопируйте без изменений точную фразу, которую покажет агент. Обычного ответа
+«да» недостаточно. Подтверждение действует только для одного локального запуска
+на синтетических данных.
+
+**Шаг 4 — выполнить автоматизацию**
+
+```text
+Запусти подтверждённую автоматизацию и покажи, что создано, где находится результат и сколько времени оценочно сэкономлено.
+```
+
+Для варианта 1 агент создаст новый файл `weekly_management_report.xlsx` с
+объединёнными показателями CRM и BI и диаграммой. Точный путь к результату будет
+показан в чате; обычно файлы находятся внутри
+`data/state/skills/personal_evolution_engine/jobs/.../output/`.
+
+**Шаг 5 — проверить самоэволюцию или выполнить откат**
+
+```text
+Результат принят. Учти этот отзыв при следующих предложениях и покажи текущий статус автоматизации.
+```
+
+Принятые, исправленные и отклонённые предложения влияют на будущий порядок
+рекомендаций, но не меняют уже подтверждённую версию незаметно для пользователя.
+Для удаления только последнего созданного результата отправьте:
+
+```text
+Полностью откати последний тестовый запуск. Исходные данные и историю проверки сохрани.
+```
+
+### 4. Синтетические данные и результаты
+
+История действий находится в
+[`skills/personal_evolution_engine/assets/synthetic/activity_spec.json`](skills/personal_evolution_engine/assets/synthetic/activity_spec.json).
+Тестовые файлы CRM, BI, сообщений, писем и месячных показателей находятся в
+[`skills/personal_evolution_engine/assets/synthetic/workspace/`](skills/personal_evolution_engine/assets/synthetic/workspace/).
+
+Набор содержит 239 действий, 70 завершённых циклов и 5 разных процессов за
+период с марта по июнь 2026 года. На выходе в зависимости от выбранного процесса
+создаются `.xlsx`, `.pptx`, `.eml` или `.json`. Контрольный digest гарантирует,
+что исходные файлы после запуска не изменились.
+
+### 5. Проверка кода
+
+Для прямого запуска тестов навыка зависимости нужно установить в активное
+Python-окружение:
+
+```bash
+python -m pip install openpyxl python-pptx ruff
+python -m pytest skills/personal_evolution_engine/tests/test_skill.py -q
+python -m ruff check skills/personal_evolution_engine
+```
+
+Ожидаемый результат: 4 теста пройдены. Они проверяют обнаружение процессов по
+данным, обязательное точное подтверждение, создание и откат результатов для всех
+пяти сценариев, неизменность источников и изменение приоритета рекомендаций после
+обратной связи.
+
 > **[OuroborosHub](https://github.com/razzant/OuroborosHub)** — the community skills marketplace for Ouroboros. Browse, install, and publish reviewed skills (transport bridges like A2A/Telegram, tools, and UI widgets) straight from the app's Skills tab, or explore the catalog at [github.com/razzant/OuroborosHub](https://github.com/razzant/OuroborosHub).
 
 > **Previous version:** The original Ouroboros ran in Google Colab via Telegram and evolved through 30+ self-directed cycles in its first 24 hours. That version is available at [`legacy-google-colab`](https://github.com/razzant/ouroboros/tree/legacy-google-colab). This repository is the next generation — a native desktop application for macOS, Linux, and Windows with a web UI, local model support, and a layered safety system (hardcoded sandbox plus policy-based LLM safety check).
